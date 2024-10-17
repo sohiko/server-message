@@ -1,0 +1,37 @@
+name: ServerMessagePlugin
+version: 1.0
+main: com.sohiko.server_message.Main
+api-version: 1.20
+commands:
+  server-message:
+    description: 全体に向けたメッセージを送信できるコマンド
+    usage: /<command> <message> <color>
+    tab-completer: com.sohiko.server_message.Main
+    permission: servermessage.send
+    permission-message: このコマンドを使用する権限がありません
+  tasuku:
+    description: Tasu9Nに発光エフェクトを与えるコマンド
+    usage: /tasuku [on|off]
+    permission: servermessage.tasuku
+    permission-message: このコマンドを使用する権限がありません
+  taichi:
+    description: KomeNeroに発光エフェクトを与えるコマンド
+    usage: /taichi [on|off]
+    permission: servermessage.taichi
+    permission-message: このコマンドを使用する権限がありません
+permissions:
+  servermessage.send:
+    description: サーバーメッセージコマンドを使用する権限
+    default: op
+  servermessage.tasuku:
+    description: /tasuku コマンドを使用する権限
+    default: true
+  servermessage.tasuku.admin:
+    description: /tasuku on/off コマンドを使用する権限
+    default: op
+  servermessage.taichi:
+    description: /taichi コマンドを使用する権限
+    default: true
+  servermessage.taichi.admin:
+    description: /taichi on/off コマンドを使用する権限
+    default: op
