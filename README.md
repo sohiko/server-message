@@ -1,5 +1,7 @@
 超個人的内容のプラグイン
+For Minecraft.
 
+## Info:
 This plugin can send messages within the server.
 
 It is a simplified command of /tellraw.
